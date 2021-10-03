@@ -9,7 +9,7 @@ services:
       - "5072:5082"
     environment:
       DbConfiguration__ConnectionString: "Host=host.docker.internal;Port=5426;Database=supply-service;Username=postgres;Password=supplyServicePassword"
-      KafkaConfiguration__BootstrapServers: "host.docker.internal:9092"
+      KafkaConfiguration__BootstrapServers: "broker:29092"
     depends_on:
       - supply-service-db
       - zookeeper
