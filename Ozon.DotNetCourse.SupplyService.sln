@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A4C9DDC-7EE7-4CC0-A2C1-D5D93C3BAB3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E6289175-4676-4716-88EF-BE5DD5B77572}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	docker-compose.yml = docker-compose.yml
+	Dockerfile = Dockerfile
+	entrypoint.sh = entrypoint.sh
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.DotNetCourse.SupplyService", "src\Ozon.DotNetCourse.SupplyService\Ozon.DotNetCourse.SupplyService.csproj", "{865059D9-1FFC-4600-992F-AA9BB6FB0699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.DotNetCourse.SupplyService.Migrator", "src\Ozon.DotNetCourse.SupplyService.Migrator\Ozon.DotNetCourse.SupplyService.Migrator.csproj", "{B067B7B1-E4E5-45F2-A2E2-8130540C3F22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{865059D9-1FFC-4600-992F-AA9BB6FB0699} = {9A4C9DDC-7EE7-4CC0-A2C1-D5D93C3BAB3D}
+		{B067B7B1-E4E5-45F2-A2E2-8130540C3F22} = {9A4C9DDC-7EE7-4CC0-A2C1-D5D93C3BAB3D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{865059D9-1FFC-4600-992F-AA9BB6FB0699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865059D9-1FFC-4600-992F-AA9BB6FB0699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865059D9-1FFC-4600-992F-AA9BB6FB0699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865059D9-1FFC-4600-992F-AA9BB6FB0699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B067B7B1-E4E5-45F2-A2E2-8130540C3F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B067B7B1-E4E5-45F2-A2E2-8130540C3F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B067B7B1-E4E5-45F2-A2E2-8130540C3F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B067B7B1-E4E5-45F2-A2E2-8130540C3F22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

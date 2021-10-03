@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Confluent.Kafka" Version="1.8.1" />
+      <PackageReference Include="Dapper" Version="2.0.90" />
+      <PackageReference Include="Google.Protobuf" Version="3.18.0" />
+      <PackageReference Include="Grpc.AspNetCore" Version="2.39.0" />
+      <PackageReference Include="Grpc.Core.Api" Version="2.41.0" />
+      <PackageReference Include="Grpc.Tools" Version="2.41.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="Npgsql" Version="5.0.10" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Protos\Supply.proto" />
+      <Protobuf Include="Protos\Supply.proto">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Protobuf>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Ozon.DotNetCourse.SupplyService.Migrator\Ozon.DotNetCourse.SupplyService.Migrator.csproj" />
+    </ItemGroup>
+
+</Project>

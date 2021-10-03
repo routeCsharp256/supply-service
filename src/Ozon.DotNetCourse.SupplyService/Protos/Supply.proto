@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Ozon.DotNetCourse.SupplyService;
+
+option csharp_namespace = "Ozon.DotNetCourse.SupplyService.GRPC";
+
+service SupplyService {
+  rpc RequestSupply(RequestSupplyRequest) returns (RequestSupplyResponse);
+}
+
+message RequestSupplyRequest {
+  repeated SupplyItem items = 1;
+  message SupplyItem{
+    int64 sku = 1;
+    int32 quantity = 2;
+  }
+}
+
+message RequestSupplyResponse{
+  int64 supply_id = 1;
+}
