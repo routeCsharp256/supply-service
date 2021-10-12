@@ -19,10 +19,6 @@ namespace Ozon.DotNetCourse.SupplyService.Infrastructure.Kafka
         public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings()
         {
             NullValueHandling = NullValueHandling.Ignore,
-            ContractResolver = new DefaultContractResolver()
-            {
-                NamingStrategy = new SnakeCaseNamingStrategy()
-            },
             Converters = new JsonConverter[] {new StringEnumConverter()}
         };
         
